@@ -3,7 +3,7 @@ React Router v7 + Tailwind v4 + shadcn-style components (Button, Card, Badge).
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173
+npm run dev
 ```
 
 - Put your voice note at `public/kaya-mo-yan.mp3`
