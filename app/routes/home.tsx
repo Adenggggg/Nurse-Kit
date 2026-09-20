@@ -12,16 +12,16 @@ export function meta({}: Route.MetaArgs) {
   return [{ title: "Nurse Recovery Kit 🩷" }];
 }
 
-const PLAYLIST_URL = "https://open.spotify.com/"; // <- swap in your playlist
+const PLAYLIST_URL = "https://open.spotify.com/playlist/4isApLoOWQJNhT1V2BMo9g?si=hF1qo3ALQ8OGTSbKYH7yqw";
 
 const FUNNY = [
-  "Your feet filed a formal complaint. HR (me) is reviewing it. 🦶",
+  "No more saving lives today. Go save your sleep schedule.",
   "Today you kept humans alive AND survived the vending machine. Iconic.",
-  "Breaking news: local nurse is a legend. Details at 11 (after nap).",
+  "Off duty na. No more questions, no more responsibilities",
   "Vital signs check: 100% cute, 0% patience left. Totally normal.",
 ];
 const COMPLIMENTS = [
-  "Ang galing mo talaga. Hindi lahat kayang gawin ang ginagawa mo.",
+  "Shift may be draining, but your face is still doing overtime.",
   "You're someone's best part of a scary day. That's real magic.",
   "Your care is the kind people remember forever.",
   "Strong, kind, and still showing up. Proud of you, nurse!",
@@ -73,7 +73,7 @@ export default function Home() {
           <p className="font-cute text-lg font-semibold">Before your shift</p>
           <p className="text-sm opacity-80">Tap to hear a little "Kaya mo yan, nurse!"</p>
         </div>
-        <audio ref={audio} src="/kaya-mo-yan.mp3" onEnded={() => setPlaying(false)} />
+        <audio ref={audio} src="/Hi, Ali.mp3" onEnded={() => setPlaying(false)} />
       </Card>
 
       {/* Big button */}
@@ -129,7 +129,7 @@ export default function Home() {
 
       <Photobooth />
 
-      <p className="mt-auto pt-6 text-center text-sm opacity-60">Made with love, for you. 🩷</p>
+      <p className="mt-auto pt-6 text-center text-sm opacity-60">Made with Care, for you. 🩷</p>
     </main>
     </div>
   );
