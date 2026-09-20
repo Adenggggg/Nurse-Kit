@@ -5,6 +5,7 @@ import { Heart, Music2, Moon, Mic, Pause, Sparkles } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
 import { Badge } from "~/components/ui/badge";
+import { Photobooth } from "~/components/photobooth";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -125,6 +126,8 @@ export default function Home() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <Photobooth />
 
       <p className="mt-auto pt-6 text-center text-sm opacity-60">Made with love, for you. 🩷</p>
     </main>
